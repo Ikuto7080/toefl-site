@@ -1,0 +1,35 @@
+.top{
+    background-image: url(../img/fv@2x.png);
+    background-position: center;
+    background-size: cover;
+    @include overTab{
+        background-image: url(../img/fv.png);
+    }
+    .top-content{
+        padding-top: 116px;
+        padding-bottom: 86px;
+        text-align: center;
+        color: cl(white);
+    }
+    .title{
+        font-size: 48px;
+        line-height: 65px;
+        margin-bottom: 28px;
+    }
+    .desc{
+        font-size: 18px;
+        color: cl(white);
+        text-align: center;
+        line-height: 31px;
+    }
+    .cmn-link{
+        margin-top: 51px;
+    }
+    .inquery{
+        margin-top: 22px;
+        a{
+            color: cl(white);
+            text-decoration: underline;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.inquiry{
+    .inner{
+        background-image: url("../img/cta.png");
+    }
+    .title{
+        padding-top: 70px;
+        font-weight: bold;
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: cl(white);
+        @include overTab{
+            font-size: 32px;
+        }
+    }
+    .sub-text{
+        text-align: center;
+        margin-top: 22px;
+        padding-bottom: 41px;
+        a{
+            color: cl(white);
+            text-decoration: underline;
+            font-size: 16px;
+        }
+    }
+}
+.phone-number{
+    .inner{
+        margin-bottom: 25px;
+        text-align: center;
+        @include overTab{
+            justify-content: center;
+            align-items: flex-end;
+            display: flex;
+
+        }
+        // line-height: 50px;
+    }
+    .ttl{
+        font-size: 16px;
+        margin-top: 38px;
+        @include overTab{
+            margin-right: 20px;
+        }
+    }
+    .num{
+        font-size: 36px;
+        height: 30px;
+        font-weight: bold;
+        margin-top: 25px;
+    }
+    .open-time{
+        margin-top: 38px;
+        @include overTab{
+            margin-left: 20px;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.notice-list{
+    margin-top: 58px;
+    .inner{
+
+    } 
+    .cmn-title2{
+    } 
+    .ul-align-center{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .notice-cont{
+        margin-top: 44px;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 161px;
+    } 
+    .notice-item{
+        display: flex;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        border-top: solid .5px black;
+        &:last-child{
+            border-bottom: .5px solid black;
+        }
+        p{
+            font-size: 12px;
+            @include overTab{
+                font-size: 16px;
+            }
+        }
+    } 
+    .date{
+        font-size: 12px;
+        margin-right: 30px;
+        @include overTab{
+            margin-right: 51px;
+            font-size: 16px;
+        }
+    }
+}

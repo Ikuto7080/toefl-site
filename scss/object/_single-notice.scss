@@ -1,0 +1,114 @@
+.single-notice{
+
+    .inner{
+        margin-top: 79px;
+        margin-right: 190px;
+        margin-left: 190px;
+        @media only screen and (max-width: 767px) {
+            margin-right: 10%;
+            margin-left: 10%;
+            margin-top: 50px;
+        }
+    }
+    .notice-ttl{
+        font-size: 28px;
+        line-height: 48px;
+        font-weight: bold;
+        margin-bottom: 112px;
+        @media only screen and (max-width: 767px) {
+            margin-bottom: 50px;
+        }
+    }
+    .date{
+        text-align: right;
+        font-size: 16px;
+        margin-bottom: 60px;
+    }
+
+    .h1-wrapper {
+        margin-bottom: 33px;
+        p{
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    .h1-ttl{
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    .h2-wrapper{
+        margin-bottom: 30px;
+        p{
+            font-size: 16px;
+            line-height: 24px;
+        }
+    } 
+    .h2-ttl{
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 27px;
+        position: relative;
+        padding-left: 14px;
+        &::before{
+            content:"";
+            display:inline-block;
+            width:4px;
+            height: 28px;
+            background-color:#1B224C;
+            position:absolute;
+            top:-3px;
+            left:0px;
+        }
+    } 
+    .quoute{
+        padding-top: 27px;
+        padding-bottom: 30px;
+        padding-left: 74px;
+        padding-right: 26px;
+        background-color: #F8F8F8;
+        margin-bottom: 30px;
+        position: relative;
+        span{
+            &::before{
+                position: absolute;
+                font-family: "Font Awesome 5 Free";
+                content: '\201c';
+                font-weight: 900;
+                font-size: 90px;
+                top: 50%;
+                left: 50px;
+                color: #B4B4B4;
+            }
+        }
+    } 
+    .image{
+
+    } 
+    .list{
+        margin-top: 36px;
+        margin-left: 32px;
+    } 
+    .item{
+        font-size: 16px;
+        line-height: 24px;
+        position: relative;
+        &::before{
+            content:"●";
+            display:inline-block;
+            color:cl(yellow);
+            position:absolute;
+            top:0px;
+            left:-30px;
+         }
+    } 
+    .txt-link{
+        margin-top: 30px;
+        margin-bottom: 60px;
+        a{
+            color: cl(yellow);
+            text-decoration: underline;
+            font-size: 18px;
+        }
+    }
+}

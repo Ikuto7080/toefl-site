@@ -1,0 +1,90 @@
+.blog-top{
+    background-image: url("../img/blog.png");
+    @include overTab{
+        background-image: url("../img/blog@2x.png");
+    }
+    padding-top: 95px;
+    padding-bottom: 94px;
+    .cmn-title2{
+        color: cl(white)
+    }
+}
+
+.all-blog{
+    .inner{
+    }
+    .cmn-title2{
+        margin-top: 85px;
+        margin-bottom: 60px;
+    }
+    .blog-cont{
+    }
+    .blog-item{
+        margin-bottom: 93px;
+        @include overTab{
+            display: flex;
+            justify-content: center;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+        @media only screen and (max-width: 767px) {
+            width: 80%;
+            margin: 0 auto 50px;
+
+        }
+        
+
+    }
+    .image{
+        position: relative;
+        @include overTab{
+            margin-right: 50px;
+        }
+        span{
+            position: absolute;
+            display: inline-block;
+            color: cl(white);
+            font-size: 12px;
+            padding: 4px 9px 7px 9px;
+            background-color: cl(blue);
+        }
+        img{
+            width: 240px;
+            height: 148px;
+        }
+        @media only screen and (max-width: 767px){
+            // text-align: center;
+        }
+    }
+    .txt{
+        @include overTab{
+            width: 610px;
+        }
+    }
+    .date{
+        font-size: 16px;
+        margin-bottom: 20px;
+        @media only screen and (max-width: 767px) {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+    }
+    .ttl{
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        line-height: 39px;
+        @media only screen and (max-width: 767px) {
+            font-size: 20px;
+            line-height: 25px;
+            margin-bottom: 10px;
+        }
+    }
+    p{
+        font-size: 16px;
+        @media only screen and (max-width: 767px) {
+            font-size: 12px;
+            line-height: 24px;
+        }
+    }
+}

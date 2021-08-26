@@ -1,0 +1,106 @@
+.strength{
+    .inner{
+        margin-top: 59px;
+    }
+    .cmn-title{
+       
+    }
+    .feature-wrapper{
+    }
+    .item{
+        justify-content: space-between;
+        margin: 59px 190px 60px 190px;
+        display: flex;
+        @media only screen and (max-width: 900px) {
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+        @media only screen and (max-width: 767px) {
+            display: flex;
+            flex-flow: column-reverse;
+            position: relative;
+            margin-bottom: 30px;
+        }
+        &.-right{
+            flex-flow: row-reverse;
+            @media only screen and (max-width: 767px) {
+                flex-flow: column-reverse;
+            }
+
+        }
+    }
+    .txt{
+        width: 500px;
+        @media only screen and (max-width: 767px) {
+            text-align: center;
+            width: auto;
+        }
+    }
+    .point{
+        background-color: cl(yellow);
+        padding: 8px 25px 10px 26px;
+        color: cl(white);
+        display: inline-block;
+        margin-bottom: 35px;
+        @media only screen and (max-width: 767px) {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+    .feature-title{
+        font-size: 26px;
+        font-weight: bold;
+        line-height: 39px;
+        margin-bottom: 39px;
+        @media only screen and (max-width: 767px) {
+            margin: 30px 10px 20px;
+        }
+    }
+    .feature-desc{
+        font-size: 16px;
+        line-height: 27px;
+        flex: 1;
+    }
+    .img{
+        @include overTab{
+            &.-left{
+                margin-left: 0;
+                margin-right: 50px;
+            }
+        }
+        img{
+            width: 100%;
+        }
+        @include overTab{
+            margin-left: 50px;
+        }
+    }
+    .price-wrapper{
+        text-align: center;
+        margin-bottom: 53px;
+    }
+    .price-cont{
+        display: inline-block;
+        padding-top: 61px;
+        padding-bottom: 53px;
+        width: 100%;
+        background-image: url("../img/price.png");
+        background-size: cover;
+        background-position: center;
+    }
+    .plan{
+        font-size: 26px;
+        font-weight: bold;
+        color: cl(white);
+        margin-bottom: 27px;
+    }
+    .cmn-link{
+        &.-bg-none{
+            a{
+                background-color: transparent;
+                border: solid 1px cl(white);
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.contant .inner {
+  margin-top: 58px;
+  margin-bottom: 82px;
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media only screen and (max-width: 767px) {
+  .contant .inner {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.contant .first-msg p {
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.contant .form {
+  margin-top: 41px;
+}
+
+.contant .form-item {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contant .form-item-label {
+  width: 100%;
+  max-width: 248px;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.contant .form-item-input {
+  width: 100%;
+  border: solid .5px #1B224C;
+  height: 50px;
+}
+
+.contant .privacy {
+  text-align: center;
+  margin-bottom: 33px;
+  font-size: 16px;
+}
+
+.contant .privacy a {
+  color: cl(yellow);
+}
+
+.contant .agree {
+  font-size: 16px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.contant .submit {
+  text-align: center;
+}
+
+.contant .form-btn {
+  text-align: center;
+  margin: 0 auto;
+  display: inline-block;
+  padding: 16px 68px;
+  border-radius: 5px;
+  background-color: cl(blue);
+  color: cl(white);
+}
+/*# sourceMappingURL=page-contact.css.map */

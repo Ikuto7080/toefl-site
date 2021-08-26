@@ -1,0 +1,30 @@
+// foundation
+@import "foundation/base";
+@import "foundation/general";
+
+// layout
+@import "layout/common";
+@import "layout/header";
+@import "layout/footer";
+
+// object
+@import "object/top";
+@import "object/worries";
+@import "object/strength";
+@import "object/success-ex";
+@import "object/process";
+@import "object/faq";
+@import "object/blog-notice";
+@import "object/inquiry";
+// price
+@import "object/price_page";
+@import "object/price_table";
+// blog
+@import "object/single-blog";
+@import "object/archive-blog";
+@import "object/related-field";
+// notice
+@import "object/archive-notice";
+@import "object/single-notice";
+// contact
+@import "object/page-contact.scss";

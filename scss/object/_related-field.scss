@@ -1,0 +1,53 @@
+.related-field{
+    margin-bottom: 69px;
+    @include overTab{
+        margin-top: 60px;
+    }
+    .inner-article{
+        width: 270px;
+    }
+    .related-title{
+
+    }
+    .related-blog-list{
+
+    }
+    .related-blog-item{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 42px;
+    }
+    .image{
+        img{
+            max-width: none;
+            width: 100px!important;
+            height: 73px;
+        }
+    }
+    .ttl{
+        margin-left: 17px;
+        a{
+            text-decoration: underline;
+        }
+        p{
+            font-size: 12px;
+            line-height: 24px;
+        }
+    }
+    .inner-category{
+        width: 296px;
+    }
+    .related-title{
+
+    }
+    .category-list{
+
+    }
+    .category-item{
+        list-style: disc;
+        a{
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+}

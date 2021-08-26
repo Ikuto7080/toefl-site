@@ -1,0 +1,311 @@
+/*  --------------------------------------------------
+        :: Global Reset & Standards
+-------------------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+html {
+    font-size: 62.5%;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/* 初期設定
+================================================== */
+body {
+    font-family: 'Yu Gothic Medium', '游ゴシック Medium', YuGothic, 'ヒラギノ角ゴ Pro', Hiragino Kaku Gothic Pro, '游ゴシック体', 'メイリオ', Meiryo sans-serif !important;
+    font-weight: 500;
+    font-feature-settings: "palt";
+    color: #1B224C;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6em;
+    background: #fff;
+    overflow-x: hidden;
+}
+::selection {
+    background: #fff100;
+    color: #444;
+}
+::-moz-selection {
+    background: #fff100;
+    color: #444;
+}
+a {
+    color: #1B224C;
+    text-decoration: none;
+    line-height: inherit;
+}
+a , a img {
+    -webkit-transition: 0.1s ease-out;
+    -moz-transition: 0.1s ease-out;
+    -o-transition: 0.1s ease-out;
+    transition: 0.1s ease-out;
+    border: none;
+}
+a:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    -ms-filter: "alpha( opacity=80 )";
+}
+p {
+    margin: 0;
+    padding: 0;
+    color: #444;
+    font-size: 14px;
+    line-height: 1.6em;
+    text-align: justify;
+}
+p a, p a:visited {
+    line-height: 1.6em;
+}
+
+p.en {
+    font-family: 'bebas';
+    font-size: 70px;
+    line-height: 1.2em;
+    color: transparent;
+    text-stroke: 1px #000;
+    -webkit-text-stroke: 1px #000;
+}
+p.en span.yellow {
+    color: #fff100;
+}
+@media all and (-ms-high-contrast: none) {
+    p.en {
+        color: #ffffff;
+        text-shadow: black 1px 1px 0px, black -1px 1px 0px,
+        black 1px -1px 0px, black -1px -1px 0px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    p.en {
+        font-size: 40px;
+        text-align: center
+    }
+}
+
+img {
+    margin: 0;
+    vertical-align: top;
+}
+p img {
+    margin: 0;
+}
+ul, ol {
+    margin: 0;padding: 0;
+}
+ul {
+    list-style: none outside;
+}
+ol {
+    list-style: decimal;
+}
+ol, ul.square, ul.circle, ul.disc {
+    margin-left: 1.5em;
+}
+ul.square {
+    list-style: square outside;
+}
+ul.circle {
+    list-style: circle outside;
+}
+ul.disc li:before {
+    content:'●';
+    margin-right: 5px;
+    margin-left: 4px;
+    display: inline-block;
+    color: #F5A623;
+}
+ul.disc li {
+    font-size: 15px;
+    text-indent: -1.3em;
+}
+ul.decimal {
+    list-style: decimal;
+}
+ul.decimal li {
+    font-size: 15px;
+    margin-left: 1.3em;
+    margin-bottom: 10px;
+}
+
+ul.decimal2 {
+    list-style: none;
+}
+ul.decimal2 li {
+    font-size: 15px;
+    margin-left: 2em;
+    margin-bottom: 20px;
+}
+ul.decimal2 li span.num {
+    padding: 5px 8.5px;
+    color: #fff;
+    font-weight: bold;
+    background: #004fa3;
+    margin-left: -2em;
+    margin-right: 5px;
+    border-radius: 100%;
+}
+
+strong {
+    font-weight: bold;
+    line-height: inherit;
+}
+.linkbox {
+    -webkit-transition: 0.1s ease-out;
+    -moz-transition: 0.1s ease-out;
+    -o-transition: 0.1s ease-out;
+    transition: 0.1s ease-out;
+}
+.linkbox:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    -ms-filter: "alpha( opacity=80 )";
+}
+
+@media only screen and (max-width: 767px) {
+    p {
+        font-size: 13px;
+        line-height: 1.5em;
+        text-align: justify;
+    }
+    p a, p a:visited {
+        line-height: 1.3em;
+    }
+}
+
+
+
+/* グリッドシステム
+================================================== */
+.container {
+    margin: 0 20px;
+}
+.row {
+    width: 90%;
+    max-width: 1200px;
+    min-width: 727px;
+    margin: 0 auto;
+}
+.row .row {
+    min-width: 0;
+}
+
+.columns {
+    margin-right: 4%;
+    float: left;
+    min-height: 1px;
+    position: relative;
+}
+.SP_columns {
+    margin-right: 4%;
+    float: left;
+    min-height: 1px;
+    position: relative;
+}
+.lc {
+    margin-right: 0;
+}
+
+.row .g1.columns    { width: 4.666666666666667%; }
+.row .g15.columns    { width: 9%; }
+.row .g2.columns    { width: 13.333333333333334%; }
+.row .g25.columns    { width: 17.666666666666668%; }
+.row .g3.columns    { width: 22%; }
+.row .g4.columns    { width: 30.666666666666664%; }
+.row .g5.columns    { width: 39.33333333333333%; }
+.row .g6.columns    { width: 48%; }
+.row .g7.columns    { width: 56.666666666666664%; }
+.row .g8.columns    { width: 65.33333333333333%; }
+.row .g9.columns    { width: 74%; }
+.row .g10.columns   { width: 82.66666666666667%; }
+.row .g11.columns   { width: 91.33333333333333%; }
+.row .g12.columns   { width: 100%; }
+
+.row .g3.SP_columns    { width: 22%; }
+.row .g4.SP_columns    { width: 30.666666666666664%; }
+.row .g6.SP_columns    { width: 48%; }
+.row .centered { float: none; margin: 0 auto; }
+
+img, object, embed {
+    max-width: 100%;
+    height: auto;
+    width:auto;
+}
+img {
+    -ms-interpolation-mode: bicubic;
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        -webkit-text-size-adjust: none;
+        -ms-text-size-adjust: none;
+        width: 100%;
+        min-width: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .container {
+        min-width: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .row {
+        width: 90%;
+        min-width: 0;
+        margin-left: 0;
+        margin-right: 0;
+        margin: 0 auto;
+    }
+    .SP_row {
+        width: 100% !important;
+    }
+    .column, .columns {
+        width: auto !important;
+        float: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .tisu {
+        float: none;
+        margin: 0 auto 20px auto;
+        max-width: 500px;
+    }
+    .SP_columns {
+        margin: 0 1% 0 1%;
+        min-height: 1px;
+    }
+    .row .g3.SP_columns    { width: 48%; }
+    .row .g4.SP_columns    { width: 48%; }
+}

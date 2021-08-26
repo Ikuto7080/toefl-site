@@ -1,0 +1,80 @@
+.worries{
+    background-color: cl(blue);
+    .inner{
+        text-align: center;
+    }
+    .cmn-title{
+        padding-top: 63px;
+        color: cl(white);
+        line-height: 50px;
+    }
+    .worries-cont{
+            display: flex;
+            justify-content: center;
+            margin-top: 65px;
+            margin-bottom: 94px;
+    }
+    .item{
+        color: cl(white);
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+        line-height: 39px;
+        @include overTab{
+            margin-right: 57px;
+            font-size: 18px;
+
+        }
+        &:last-child{
+            margin-right: 0px;
+        }
+    }
+    .emphasis{
+        text-align: center;
+        display: inline-block;
+        background-color: cl(white);
+        max-width: 900px;
+        margin-bottom: 54px;
+        width: 100%;
+        @media only screen and (max-width: 955px) {
+            width: 80%;
+        }
+    }
+    .emphasis-inner{
+        background-color: cl(white);
+        display: inline-block;
+        border: solid cl(blue) 5px;
+        margin: 11px;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        max-width: 868px;
+        width: 100%;
+        @media only screen and (max-width: 955px) {
+            width: 90%;
+        }
+    }
+    .main-cont{
+        color: cl(blue);
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 30px;
+        line-height: 40px;
+        @include overTab{
+            font-size: 36px;
+            line-height: 50px;
+        }
+        span{
+            background: linear-gradient(transparent 70%, cl(yellow) 70%);
+        }
+
+    }
+    .sub-cont{
+        font-size: 18px;
+        text-align: center;
+        line-height: 20px;
+        @include overTab{
+            line-height: 31px;
+        }
+    }
+
+}

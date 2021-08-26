@@ -1,0 +1,186 @@
+.blog-whole{
+    display: flex;
+    justify-content: center;
+    margin-right: 20px;
+    margin-left: 20px;
+    @media only screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+}
+.blog-detail{
+    max-width: 590px;
+    .inner{
+        margin-top: 60px;
+        @include overTab{
+            margin-right: 36px;
+            margin-left: 0;
+        }
+    .category{
+        background-color: cl(blue);
+        padding: 9px 25px;
+        text-align: center;
+        color: cl(white);
+    }
+    .blog-ttl{
+        margin-top: 30px;
+        font-size: 28px;
+        line-height: 42px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+    .sns-date{
+        display: flex;
+        justify-content: space-between;
+    }
+    .sns{
+        margin-bottom: 25px;
+        // span{
+        //     padding: 5px 9px 5px 24px;
+        //     background-color: cl(blue);
+        //     color: cl(white);
+        // }
+    }
+    .date{
+        font-size: 16px;
+    }
+    .image{
+        img{
+            width: 590px;
+        }
+    }
+    .h2-wrapper {
+        margin-top: 40px;
+        p{
+            font-size: 16px;
+        }
+    }
+    .h2-ttl{
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    } 
+    .h3-wrapper{
+        margin-top: 33px;
+        margin-bottom: 30px;
+        p{
+            font-size: 16px;
+            line-height: 24px;
+        }
+    } 
+    .h3-ttl{
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 27px;
+        position: relative;
+        padding-left: 14px;
+        &::before{
+            content:"";
+            display:inline-block;
+            width:4px;
+            height: 28px;
+            background-color:#0097A7;
+            position:absolute;
+            top:-3px;
+            left:0px;
+        }
+    } 
+    .quoute{
+        padding-top: 27px;
+        padding-bottom: 30px;
+        padding-left: 74px;
+        padding-right: 26px;
+        background-color: #F8F8F8;
+        margin-bottom: 30px;
+        position: relative;
+        span{
+            &::before{
+                position: absolute;
+                font-family: "Font Awesome 5 Free";
+                content: '\201c';
+                font-weight: 900;
+                font-size: 90px;
+                top: 50%;
+                left: 50px;
+                color: #B4B4B4;
+            }
+        }
+    } 
+    .image{
+
+    } 
+    .list{
+        margin-top: 30px;
+        margin-left: 36px;
+    } 
+    .item{
+        font-size: 16px;
+        line-height: 24px;
+        position: relative;
+        &::before{
+            content:"●";
+            display:inline-block;
+            color:cl(yellow);
+            position:absolute;
+            top:0px;
+            left:-38px;
+         }
+         
+    } 
+    .txt-link{
+        margin-top: 30px;
+        margin-bottom: 60px;
+        a{
+            color: cl(yellow);
+            text-decoration: underline;
+            font-size: 18px;
+        }
+    }
+    }
+    .rec-article{
+        .rec-title{
+            font-size: 26px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .rec-item{
+            a{
+                display: flex;
+                margin-bottom: 28px;
+            }
+        }
+        .image{
+            position: relative;
+            .image{
+                img{
+                    width: 210px;
+                    height: 128px;
+                    max-width: none;
+                }
+            }
+            span{
+                z-index: 1;
+                position: absolute;
+                display: inline-block;
+                color: cl(white);
+                font-size: 12px;
+                padding: 4px 9px 7px 9px;
+                background-color: cl(blue);
+            }
+        }
+        .txt{
+            margin-left: 20px;
+            p{
+                font-size: 16px;
+                font-weight: bold;
+                text-decoration: underline;
+                line-height: 27px;
+                
+            }
+            .date{
+                font-size: 12px;
+                margin-bottom: 29px;
+                font-size: 16px;
+            }
+        }
+    }
+}

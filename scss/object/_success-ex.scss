@@ -1,0 +1,75 @@
+.success-ex{
+    .inner{
+        background-color: cl(blue);
+    }
+    .cmn-title{
+        padding-top: 58px;
+        color:cl(white);
+    }
+    .list{
+        display: flex;
+        margin-top: 137px;
+        justify-content: center;
+        padding-bottom: 60px;
+        @media only screen and (max-width: 767px) {
+            flex-flow: column;
+            
+        }
+    }
+    .item{
+        width: 280px;
+        @include overTab{
+            margin-right: 30px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        @media only screen and (max-width: 767px) {
+            margin: 0 auto;
+            &:nth-child(n+2){
+                margin-top: 30px;
+            }
+        }
+    }
+    .txt{
+        color: cl(white);
+        padding-bottom: 9px;
+    }
+    .image{
+        background-color: cl(white);
+        text-align: center;
+        img{
+
+        }
+    }
+    .achievement{
+        margin-top: 16px;
+        .student-info{
+            display: flex;
+            @media only screen and (max-width: 650px) {
+                flex-flow: column;
+            }
+            .occupation{
+                padding: 8px 42px 8px 10px;
+                background-color: #F8F8F8;
+                margin-bottom: 10px;
+                margin-right: 8px;
+                @media only screen and (max-width: 650px) {
+                    margin-right: 0;
+                }
+
+            }
+            .name{
+                padding: 8px 5px 8px 14px;
+                margin-bottom: 10px;
+                background-color: #F8F8F8; 
+                flex: 1;
+            }
+
+        }
+        .score{
+            background-color: #F8F8F8; 
+            padding: 8px 0px 8px 14px;
+        }
+    }
+}

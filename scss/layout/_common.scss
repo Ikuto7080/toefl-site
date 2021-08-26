@@ -1,0 +1,92 @@
+.cmn-title{
+    font-weight: bold;
+    color: cl(blue);
+    text-align: center;
+    font-size: 20px;
+    @include overTab{
+        font-size: 36px;
+    }
+}
+.cmn-title2{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    color: cl(black);
+}
+.cmn-link{
+    a{
+        background-color: cl(yellow);
+        display: flex;
+        width: 260px;
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 31px;
+        font-weight: bold;
+        font-size: 16px;
+        color: cl(white);
+        margin: 0 auto;
+    }
+}
+
+.breadcrumbs{
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-left: 15%;
+    background-color: #F8F8F8;
+    span{
+        span{
+            font-size: 12px;
+        }
+        a{
+            font-size: 12px;
+        }
+
+    }
+}
+
+
+.related-title{
+    background-color: cl(blue);
+    color: cl(white);
+    font-size: 21px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.nav-links{
+    display: flex;
+    justify-content: center;
+}
+.page-numbers{
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 45px;
+    padding: 17px 20px;
+    border: solid 1px cl(blue);
+
+}
+.current{
+    background-color: cl(blue);
+    color: cl(white);
+}
+.screen-reader-text{
+    display: none;
+}
+.dots{
+    border: none;
+}
+.prev{
+    display: none;
+}
+.next{
+    display: none;
+}
+.sub-text{
+    a{
+
+    }
+}

@@ -1,0 +1,63 @@
+.contant{
+    .inner{
+        margin-top: 58px;
+        margin-bottom: 82px;
+        max-width: 700px;
+        margin-right: auto;
+        margin-left: auto;
+        @media only screen and (max-width: 767px) {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+    .first-msg{
+        p{
+            font-size: 16px;
+            line-height: 27px;
+        }
+    }
+    .form{
+        margin-top: 41px;
+    }
+    .form-item{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .form-item-label{
+        width: 100%;
+        max-width: 248px;
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .form-item-input{
+        width: 100%;
+        border: solid .5px #1B224C;
+        height: 50px;
+
+    }
+    .privacy{
+        text-align: center;
+        margin-bottom: 33px;
+        font-size: 16px;
+        a{
+            color: cl(yellow);
+        }
+    }
+    .agree{
+        font-size: 16px;
+        margin-bottom: 48px;
+        text-align: center;
+    }
+    .submit{
+        text-align: center;
+    }
+    .form-btn{
+        text-align: center;
+        margin: 0 auto;
+        display: inline-block;
+        padding: 16px 68px;
+        border-radius: 5px;
+        background-color: cl(blue);
+        color: cl(white);
+    }
+}

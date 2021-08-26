@@ -1,0 +1,101 @@
+.blog-notice{
+    .inner{
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        margin-right: 190px;
+        margin-left: 190px;
+        // margin-bottom: 0 !important;
+        @media only screen and (max-width: 900px) {
+            flex-flow: column;
+            margin-right: 0px;
+            margin-left: 0;
+        }
+        @include overTab{
+            margin-bottom: 119px;
+        }
+    }
+    .blog-wrapper{
+        @media only screen and (max-width: 900px) {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+    .blog-notice-title{
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        @media only screen and (max-width: 900px) {
+            text-align: center;
+        }
+    }
+    .blog-cont{
+    }
+    .blog-item{
+        display: flex;
+        margin-bottom: 31px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    .image{
+        position: relative;
+        span{
+            position: absolute;
+            display: inline-block;
+            color: cl(white);
+            font-size: 12px;
+            padding: 4px 9px 7px 9px;
+            background-color: cl(blue);
+        }
+        img{
+            max-width: none;
+            
+        }
+    }
+    .txt{
+        margin-left: 20px;
+        position: relative;
+        p{
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: underline;
+            line-height: 27px;
+            
+        }
+        .date{
+            position: absolute;
+            bottom: 0;
+            font-size: 12px;
+        }
+    }
+    .notice-wrapper{
+        margin-left: 67px;
+        width: 45%;
+        @media only screen and (max-width: 900px) {
+            margin: 50px auto 0;
+            text-align: center;
+        }
+    }
+    .blog-notice-title{
+
+    }
+    .notice-cont{
+    }
+    .notice-item{
+        height: 87px;
+        margin-bottom: 17px;
+        @media only screen and (max-width: 900px) {
+            margin-bottom: 0;
+        }
+        .date{
+            font-size: 12px;
+            margin-bottom: 16px;
+        }
+        .desc{
+            font-size: 16px;
+            text-decoration: underline;
+        }
+    }
+
+}

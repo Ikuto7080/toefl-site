@@ -1,0 +1,91 @@
+.page-top{
+    background-image: url("../img/plan@2x.png");
+    @include overTab{
+        background-image: url("../img/plan.png");
+    }
+    .cmn-title2{
+        color: cl(white);
+        padding-top: 95px;
+        padding-bottom: 94px;
+    }
+}
+
+.price{
+    margin-top: 58px;
+    .cmn-title2{
+        margin-bottom: 60px;
+    }
+    .price-cont{
+    }
+    .fee{
+        @include overTab{
+            display: flex;
+            justify-content: center;
+        }
+        
+    }
+    .entry-fee{
+        padding: 34px 58px;
+        background-color: cl(blue);
+        color: cl(white);
+        font-size: 22px;
+        font-weight: bold;
+        @media only screen and (max-width: 767px) {
+            background-color: cl(blue);
+            text-align: center;
+            padding: 34px 0px;
+            margin: 0 20%;
+            color: cl(white);
+            font-size: 22px;
+            font-weight: bold;
+            display: block;
+        }
+        @include overTab{
+            position: relative;
+            margin-right: 49px;
+            display: block;
+            &::after,
+            &::before{
+                content:"";
+                display:inline-block;
+                width:26px;
+                height:3px;
+                background-color:cl(black);
+                position:absolute;
+                top:50%;
+                right:-62px;
+            }
+            &::after{
+                transform: rotate(90deg);
+            }
+
+        }
+    }
+    .monthly-fee{
+        margin-left: 49px;
+        background-color: cl(blue);
+        color: cl(white);
+        padding: 34px 96px;
+        font-size: 22px;
+        font-weight: bold;
+        @media only screen and (max-width: 767px) {
+            color: cl(white);
+            font-size: 22px;
+            font-weight: bold;
+            padding: 34px 0;
+            text-align: center;
+            margin: 20px 20% 0;
+
+        }
+    }
+    .detail{
+        margin: 43px 190px 90px 190px;
+        font-size: 16px;
+        line-height: 27px;
+        @media only screen and (max-width: 767px) {
+            margin: 43px 100px 90px;
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+}
